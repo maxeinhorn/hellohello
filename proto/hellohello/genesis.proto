@@ -1,0 +1,14 @@
+syntax = "proto3";
+package maxeinhorn.hellohello.hellohello;
+
+import "gogoproto/gogo.proto";
+import "hellohello/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/maxeinhorn/hellohello/x/hellohello/types";
+
+// GenesisState defines the hellohello module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

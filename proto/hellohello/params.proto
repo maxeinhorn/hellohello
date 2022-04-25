@@ -1,0 +1,12 @@
+syntax = "proto3";
+package maxeinhorn.hellohello.hellohello;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/maxeinhorn/hellohello/x/hellohello/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
